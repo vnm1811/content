@@ -1,0 +1,91 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.doitac
+	position: relative
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		padding: 0
+	.owl-carousel
+		position: relative
+		// Main
+		.owl-stage-outer
+			.owl-stage
+				display: flex
+			.owl-item
+				display: flex
+			+media-breakpoint-up(md)
+				border-top: 1px #e0dbdb solid
+				padding: 4rem
+		// Nav
+		.owl-nav
+			text-align: center
+			button
+				&.owl-prev, &.owl-next
+					+mar(.5rem)
+					+pad(.5rem_)
+					width: 3rem
+					height: 3rem
+					background: darken(color-get($mau,trang),5%)
+					+bor-rad(50%)
+					text-align: center
+					&:focus
+						outline: none
+				&:hover, &.active
+					&.owl-prev, &.owl-next
+						background: #ff7800
+						color: color-get($mau,trang)
+				&.disabled
+					+opacity(.5)
+		+media-breakpoint-up(md)
+			button
+				&.owl-prev
+					position: absolute
+					top: 5rem
+					left: -6rem
+				&.owl-next
+					position: absolute
+					top: 5rem
+					right: -6rem
+		// Dots
+		.owl-dots
+			.owl-dot
+				&:focus
+					outline: none
+				span
+					background: darken(color-get($mau,trang),5%)
+				&.active
+					span
+						background: color-get($mau,main)
+	.news-list
+
+		.item
+			// position: absolute
+			// left: 50%
+			// transform: translateX(-50%)
+			// text-align: center
+			// display: flex
+			// text-decoration: none
+			height: 100%
+			+bor-rad(5px)
+			overflow: hidden
+			margin-left: 50%
+			transform: translateX(-50%)
+			+media-breakpoint-up(md)
+				margin-left: 80px
+			figure
+				text-align: center
+				overflow: hidden
+				+bor-rad(5px)
+				background: darken(color-get($mau,trang) ,3%)
+				img
+					+bor-rad(5px 5px 0 0)
+			
+			&:hover
+				figure
+					background: darken(color-get($mau,trang) ,7%)
+					img
+						+opacity(.7)
+

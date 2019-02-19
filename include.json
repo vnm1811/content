@@ -1,0 +1,21 @@
+{
+    "SETUP": {
+        "index": {
+            "header": [
+                "header/h-4"
+            ],
+            "body": [
+                "nav/n-7",
+                "nav/n-7",
+                "banner_2/b_1",
+                "bai-viet/v-1",
+                "goi-dich-vu/g-1",
+                "cac-buoc/c-3",
+                "doi_tac/d-1"
+            ],
+            "footer": [
+                "footer/f-6"
+            ]
+        }
+    }
+}

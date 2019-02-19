@@ -1,0 +1,119 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-header-4
+	background: color-get($mau,trang)
+	border-bottom: 1px solid darken(color-get($mau,trang),20%)
+	.navbar, .navbar-collapse
+		position: static
+	.navbar-toggler
+		border: 1px solid darken(color-get($mau,trang),20%)
+		+pad(.5rem .75rem)
+		&:focus
+			outline: none
+	.navbar-brand
+		+media-breakpoint-down(md)
+			margin-right: auto
+		img
+			max-height: 3rem
+	&.expand
+		.navbar-toggler
+			background: #ff7800
+			color: color-get($mau,trang)
+			border-color: #cc6001
+	.btnsearch
+		i
+			color: black
+			&:hover
+				color: #ff7800
+
+	.navbar-nav
+		
+		.nav-item
+			position: relative
+			.nav-link
+				color: black
+				font-weight: 700
+				&:before
+					content: ''
+					display: block
+					position: absolute
+					width: 3px
+					height: 0
+					background: #ff7800
+					top: 50%
+					transform: translateY(-50%)
+					left: -1rem
+					transition: 0.3s
+
+				&:hover
+					color: #ff7800
+					&:before
+						height: 100%
+
+	+media-breakpoint-up(md)
+		.navbar-collapse
+			position: relative
+		.navbar-nav
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			.nav-item
+				position: relative
+				.nav-link
+					+pad(.5rem 1rem)
+					&:before
+						content: ''
+						display: block
+						position: absolute
+						width: 0
+						height: 3px
+						background: #ff7800
+						left: 50%
+						transform: translateX(-50%)
+						top: 3.45rem
+					&:hover
+						&:before
+							width: 100%
+							height: 3px
+	+media-breakpoint-up(lg)
+		.navbar
+			.btnsearch
+				order: 9
+	.search
+		+pos(fix, 0 0 null null)
+		z-index: 999
+		display: none
+		width: 100%
+		height: 100%
+		background: rgba(0,0,0,.9)
+		+pad(.5rem)
+		border: 1px solid darken(color-get($mau,trang),20%)
+		border-top: 0
+		+bor-rad(0 0 3px 3px)
+		justify-content: center
+		align-items: center
+		.input-group
+			width: 70%
+			input
+				padding: 1rem 2rem
+				font-size: 2rem
+				border-color: #ff7800
+			button
+				padding: 1rem 2rem
+				font-size: 2rem
+				background: #ff7800
+				border-color: #cc6001
+		&.active
+			display: flex
+		.closebnt
+			+pos(abs, 30px 30px null null)
+			z-index: 999
+			color: color-get($mau,trang)
+			cursor: pointer
+
+			i
+				font-size: 6rem
+				line-height: 6rem

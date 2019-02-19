@@ -1,0 +1,7 @@
+dich vu
+dv_1: 7f4c26
+dv_2: bb5e30
+dv_3: db9a45
+dv_4: bea05d
+dv_5: 64909b
+dv_6: 68802d

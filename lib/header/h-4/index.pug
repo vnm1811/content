@@ -1,0 +1,30 @@
+header.canhcam-header-4
+	nav.navbar.navbar-expand-lg.container
+		a.navbar-brand(href='#')
+			img(src="../img/002/logo.png", alt="Logo")
+		.btn.btn-link.btnsearch
+			i.fa.fa-search
+		button.navbar-toggler.ml-3(type='button', data-toggle='collapse', data-target='#CCMenuHeader', aria-controls='CCMenuHeader', aria-expanded='false', aria-label='Toggle navigation')
+			span.fa.fa-bars
+		#CCMenuHeader.collapse.navbar-collapse
+			ul.navbar-nav.mt-2.mt-lg-0
+				li.nav-item.active
+					a.nav-link(href='#')
+						| Giới thiệu
+						span.sr-only (current)
+				li.nav-item
+					a.nav-link(href='#') Dịch vụ
+				li.nav-item
+					a.nav-link(href='#') Tin tứ
+				li.nav-item
+					a.nav-link(href='#') Liên hệ
+
+	form.form-inline.search
+		.input-group
+			input.form-control(type='text', placeholder="Search", aria-label="Search", aria-describedby='basic-addon2')
+			.input-group-append
+				button.btn.btn-primary(type='submit')
+					i.fa.fa-search
+
+		.closebnt
+			i.mdi.mdi-close
